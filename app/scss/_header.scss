@@ -1,0 +1,115 @@
+// body {
+//   background-color: rgba(0, 0, 0, 0.322);
+// }
+///////////////////////////////////////////////
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.menu-box {
+  display: flex;
+  padding-top: 12px;
+}
+
+.navigation {
+  a {
+    color: inherit;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 40px;
+    @extend %medium500;
+    color: $blue;
+    cursor: pointer;
+  }
+  &__item:nth-child(even) {
+    position: relative;
+  }
+  &__item:nth-child(even) &__link {
+    padding-right: 12px;
+  }
+  &__item:nth-child(even) &__link::after {
+    @extend %drop-arrow-menu;
+    background-image: url("../images/drop-arrow-red.svg");
+  }
+
+  &__drop-menu {
+    display: none;
+
+    @extend %medium500;
+    position: absolute;
+    top: 24px;
+    right: -10px;
+    width: 210px;
+
+    background-color: $white;
+    box-shadow: 0px 4px 40px rgba(34, 74, 164, 0.15);
+  }
+  &__drop-item {
+    @extend %medium500;
+    color: $blue;
+  }
+  &__drop-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 14px;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $blue;
+    }
+  }
+}
+.lang-switcher {
+  position: relative;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  align-self: baseline;
+  cursor: pointer;
+  padding-right: 12px;
+  @extend %medium500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $blue;
+  &::after {
+    @extend %drop-arrow-menu;
+    background-image: url("../images/drop-arrow-red.svg");
+  }
+  &__drop-menu {
+    display: none;
+
+    @extend %medium500;
+    position: absolute;
+    top: 24px;
+    right: -3px;
+
+    background-color: $white;
+    box-shadow: 0px 4px 40px rgba(34, 74, 164, 0.15);
+  }
+  &__drop-item {
+    @extend %medium500;
+    color: $blue;
+  }
+  &__drop-link {
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 14px;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $blue;
+    }
+  }
+}
+
+.visibility {
+  display: block;
+}

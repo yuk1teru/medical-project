@@ -4,3 +4,27 @@
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+
+//стрелка в навигации
+%drop-arrow-menu {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 6px;
+}
+
+//colors
+$blue: #32495e;
+$white: #f9f9f9;
+$red: #e95258;
+
+//fonts
+%medium500 {
+  font-family: TT Hoves, sans-serif;
+  font-weight: 500;
+}
