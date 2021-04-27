@@ -1,7 +1,93 @@
 .hero {
-  height: 800px;
+  position: relative;
+  min-height: 800px;
   margin: -65px auto 0;
   overflow-x: hidden;
+  &__content {
+    max-width: 450px;
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    &--left {
+      margin-right: 100px;
+      margin-left: auto;
+      align-items: flex-end;
+      color: $white;
+      text-align: end;
+    }
+    &--right {
+      margin-left: 100px;
+      margin-right: auto;
+      color: $blue;
+    }
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    max-width: 220px;
+    margin-bottom: 30px;
+
+    line-height: 1.21;
+  }
+  &__services-list {
+    max-width: 220px;
+    margin-bottom: 90px;
+  }
+  &__services-item {
+    position: relative;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+
+      width: 6px;
+      height: 6px;
+
+      background-repeat: no-repeat;
+
+      transform: translateY(-50%);
+    }
+
+    &--left {
+      padding-right: 18px;
+
+      &::before {
+        right: 0;
+        background-image: url("../images/left-hero-circle.svg");
+      }
+    }
+    &--right {
+      padding-left: 18px;
+
+      &::before {
+        left: 0;
+        background-image: url("../images/right-hero-circle.svg");
+      }
+    }
+    & + & {
+      margin-top: 12px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    min-width: 160px;
+
+    padding: 16px 43px;
+
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.21;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+  }
 }
 .hero-wrapper {
   width: 1800px;
@@ -63,7 +149,5 @@
   }
   &:hover {
     transform: translateX(-80px);
-    &::before {
-    }
   }
 }
