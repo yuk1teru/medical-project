@@ -6,6 +6,9 @@
     const langBtn = document.querySelector("[langBtn]");
     const langList = document.querySelector("[lang-list]");
 
+    const mouseHover = document.querySelector('[hero-trigger]');
+    const mouseHoverMove = document.querySelector('[hero-hover]');
+
     servicesBtn.addEventListener("click", () => {
        
         servicesList.classList.toggle("visibility");
@@ -23,6 +26,17 @@
         langList.classList.toggle("visibility");
       
      });
+    
+    mouseHover.addEventListener("mouseover", () => {
+       
+        mouseHoverMove.classList.add("hero__left--move-left");
+      
+    });
+     mouseHover.addEventListener("mouseout", () => {
+       
+        mouseHoverMove.classList.remove("hero__left--move-left");
+      
+    });
     
 
    

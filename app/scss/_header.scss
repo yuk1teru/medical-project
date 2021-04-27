@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+  z-index: 1;
+}
 .header-inner {
   display: flex;
   justify-content: space-between;
