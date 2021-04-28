@@ -9,6 +9,12 @@
     const mouseHover = document.querySelector('[hero-trigger]');
     const mouseHoverMove = document.querySelector('[hero-hover]');
 
+    const callMenuBtn = document.querySelector('[call-menu]')
+    const purpleHide = document.querySelector('[purple-hide]')
+    const greyHide = document.querySelector('[grey-hide]')
+    const blueHide = document.querySelector('[blue-hide]')
+    const greenHide = document.querySelector('[green-hide]')
+
     servicesBtn.addEventListener("click", () => {
        
         servicesList.classList.toggle("visibility");
@@ -38,7 +44,14 @@
       
     });
     
-
+callMenuBtn.addEventListener("click", () => {
+       
+        purpleHide.classList.toggle("call-menu__item--purple-hide");
+        greyHide.classList.toggle("call-menu__item--grey-hide");
+        blueHide.classList.toggle("call-menu__item--blue-hide");
+        greenHide.classList.toggle("call-menu__item--green-hide");
+      
+    });
    
 })();
 
