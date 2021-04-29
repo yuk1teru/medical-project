@@ -1,0 +1,50 @@
+.news {
+  background-color: $white;
+  &__inner {
+    padding: 70px 0 40px;
+  }
+  &__title {
+    @extend %title;
+    color: $blue;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__item {
+    position: relative;
+    max-width: 281px;
+  }
+  &__img {
+    position: relative;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: red;
+    z-index: 1;
+    background-color: rgba($blue, 0.2);
+  }
+  &__content {
+    position: absolute;
+    bottom: 0;
+    background-color: $red;
+    color: $white;
+    padding: 20px;
+    z-index: 2;
+  }
+  &__name {
+    font-weight: 800;
+  }
+  &__text {
+    margin: 20px 0;
+  }
+  &__link {
+    font-weight: 500;
+    color: $white;
+  }
+}
