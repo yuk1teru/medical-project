@@ -1,0 +1,22 @@
+.services {
+  display: none;
+  background-color: $blue;
+  &__title {
+    padding-top: 70px;
+    margin-bottom: 40px;
+    @extend %title;
+    color: $white;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__crop-img {
+    max-width: 280px;
+    max-height: 240px;
+    overflow: hidden;
+  }
+  &__img {
+    object-fit: cover;
+  }
+}

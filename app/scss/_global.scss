@@ -28,7 +28,9 @@ body {
   padding: 0 15px;
 }
 
+// Кнопка Связаться
 .call-menu {
+  display: none;
   position: sticky;
   bottom: 5px;
   &__btn {

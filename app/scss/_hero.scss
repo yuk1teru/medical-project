@@ -77,16 +77,8 @@
     }
   }
   &__link {
-    display: inline-block;
-    min-width: 160px;
-
-    padding: 16px 43px;
-
-    color: inherit;
-    font-weight: 500;
-    line-height: 1.21;
+    @extend %btn-border;
     border: 1px solid currentColor;
-    border-radius: 25px;
   }
 }
 .hero-wrapper {
