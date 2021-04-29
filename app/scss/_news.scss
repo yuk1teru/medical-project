@@ -11,6 +11,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
   }
   &__item {
     position: relative;
@@ -46,5 +47,12 @@
   &__link {
     font-weight: 500;
     color: $white;
+  }
+  &__link-box {
+    text-align: center;
+  }
+  &__link-more {
+    @extend %btn-border;
+    color: $blue;
   }
 }
