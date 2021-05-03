@@ -4,7 +4,10 @@
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
-
+//colors
+$blue: #32495e;
+$white: #f9f9f9;
+$red: #e95258;
 //стрелка в навигации
 %drop-arrow-menu {
   content: "";
@@ -36,9 +39,14 @@
   line-height: 1.32;
   text-transform: uppercase;
 }
-//colors
-$blue: #32495e;
-$white: #f9f9f9;
-$red: #e95258;
 
-//fonts
+%faq__answer {
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+%faq__label {
+  background-color: $red;
+  background-image: url("../images/answer-arrow-right.svg");
+}

@@ -1,0 +1,19 @@
+.recommend {
+  &__inner {
+    padding-top: 70px;
+    padding-bottom: 46px;
+  }
+  &__title {
+    @extend %title;
+    color: $blue;
+    margin-bottom: 70px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__img {
+    max-width: 178px;
+    object-fit: cover;
+  }
+}

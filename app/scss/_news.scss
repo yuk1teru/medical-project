@@ -19,6 +19,8 @@
   }
   &__img {
     position: relative;
+    max-width: 281px;
+    object-fit: cover;
   }
   &__item::before {
     content: "";

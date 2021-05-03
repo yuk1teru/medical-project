@@ -1,0 +1,141 @@
+.faq {
+  position: relative;
+  background-color: $blue;
+  padding-top: 60px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    top: 60px;
+    background-color: #49647d;
+    z-index: 1;
+  }
+  &__title {
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 64px;
+    @extend %title;
+    color: $white;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding-bottom: 40px;
+  }
+  &__switch {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+  }
+  &__label {
+    position: relative;
+    font-weight: 800;
+    font-size: 16px;
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      background-color: #8093ac;
+      border-radius: 50%;
+      background-image: url("../images/answer-arrow-left.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  &__radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  &__answer-box {
+    position: relative;
+    width: 720px;
+    height: 300px;
+  }
+  &__answer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.4s linear, opacity 0.1s linear;
+    opacity: 0;
+  }
+  &__answer-title {
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    & + & {
+      margin-top: 15px;
+    }
+  }
+}
+
+.faq__radio-1:checked ~ .faq__switch .faq__label-1::after {
+  @extend %faq__label;
+}
+.faq__radio-2:checked ~ .faq__switch .faq__label-2::after {
+  @extend %faq__label;
+}
+.faq__radio-3:checked ~ .faq__switch .faq__label-3::after {
+  @extend %faq__label;
+}
+.faq__radio-5:checked ~ .faq__switch .faq__label-5::after {
+  @extend %faq__label;
+}
+.faq__radio-6:checked ~ .faq__switch .faq__label-6::after {
+  @extend %faq__label;
+}
+.faq__radio-7:checked ~ .faq__switch .faq__label-7::after {
+  @extend %faq__label;
+}
+.faq__radio-8:checked ~ .faq__switch .faq__label-8::after {
+  @extend %faq__label;
+}
+.faq__radio-4:checked ~ .faq__switch .faq__label-4::after {
+  @extend %faq__label;
+}
+
+.faq__radio-1:checked ~ .faq__answer-box .faq__answer-1 {
+  @extend %faq__answer;
+}
+.faq__radio-2:checked ~ .faq__answer-box .faq__answer-2 {
+  @extend %faq__answer;
+}
+.faq__radio-3:checked ~ .faq__answer-box .faq__answer-3 {
+  @extend %faq__answer;
+}
+.faq__radio-4:checked ~ .faq__answer-box .faq__answer-4 {
+  @extend %faq__answer;
+}
+.faq__radio-5:checked ~ .faq__answer-box .faq__answer-5 {
+  @extend %faq__answer;
+}
+.faq__radio-6:checked ~ .faq__answer-box .faq__answer-6 {
+  @extend %faq__answer;
+}
+.faq__radio-7:checked ~ .faq__answer-box .faq__answer-7 {
+  @extend %faq__answer;
+}
+.faq__radio-8:checked ~ .faq__answer-box .faq__answer-8 {
+  @extend %faq__answer;
+}
