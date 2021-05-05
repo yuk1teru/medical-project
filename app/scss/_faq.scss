@@ -69,6 +69,8 @@
     position: relative;
     width: 720px;
     height: 300px;
+    padding-right: 10px;
+    overflow-y: auto;
   }
   &__answer {
     position: absolute;
