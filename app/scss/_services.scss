@@ -1,6 +1,31 @@
 .services {
-  display: none;
   background-color: $blue;
+  &__inner {
+    padding-bottom: 70px;
+  }
+  &__item {
+    position: relative;
+    max-height: 322px;
+    max-width: 281px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      width: 100%;
+      height: 152px;
+      background-image: url("../images/services-pulse.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(#32495e, 0.6);
+      transform: translateY(-100%);
+      transition: transform 0.2s linear;
+    }
+    &:hover::before {
+      transform: translateY(0);
+    }
+  }
   &__title {
     padding-top: 70px;
     margin-bottom: 40px;
@@ -10,13 +35,45 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 40px;
   }
+
   &__crop-img {
-    max-width: 280px;
+    max-width: 281px;
     max-height: 240px;
     overflow: hidden;
   }
   &__img {
     object-fit: cover;
+  }
+
+  &__content-box {
+    padding: 20px;
+    padding-bottom: 22px;
+    height: 100%;
+
+    color: $white;
+    transition: all 0.2s linear;
+  }
+  &__item:hover &__content-box {
+    transform: translateY(-90px);
+    background-color: $red;
+  }
+
+  &__name {
+    padding-bottom: 20px;
+
+    font-size: 16px;
+  }
+  &__text {
+    line-height: 1.21;
+  }
+  &__link-box {
+    text-align: center;
+  }
+
+  &__link {
+    @extend %btn-border;
+    color: $white;
   }
 }

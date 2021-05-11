@@ -11,7 +11,7 @@
     <div class="wrapper">
       <header class="header" id="header">
         <div class="container">
-          <div class="header-inner" >
+          <div class="header-inner">
             <a class="logo__link" href=""
               ><img class="logo__img" src="./images/logo.svg" alt=""
             /></a>
@@ -82,14 +82,14 @@
                   </li>
                 </ul>
               </nav>
-              <button class="lang-switcher" langBtn>
+              <div class="lang-switcher" langBtn>
                 РУС
                 <ul class="lang-switcher__drop-menu" lang-list>
                   <li class="lang-switcher__drop-item">
                     <a class="lang-switcher__drop-link" href="">КАЗ</a>
                   </li>
                 </ul>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -99,15 +99,17 @@
         <div class="container">
           <div class="footer-inner">
             <div class="footer-info">
-             <a class="footer-info__link" href="" > <img
-                class="footer-info__logo"
-                src="./images/footer-logo.svg"
-                alt="logo"
+              <a class="footer-info__link" href="">
+                <img
+                  class="footer-info__logo"
+                  src="./images/footer-logo.svg"
+                  alt="logo"
               /></a>
               <p class="footer-info__copyright">
-                &#169 Все права защищены 2019 “Тулпар”
+                <!-- &#169  -->Все права защищены 2019 “Тулпар”
               </p>
             </div>
+
             <div class="site-map">
               <h3 class="site-map__title">Карта сайта</h3>
               <ul class="site-map__list">
@@ -128,12 +130,13 @@
                 </li>
               </ul>
             </div>
+
             <div class="footer-contacts">
               <h3 class="footer-contacts__title">Связаться с нами</h3>
-              <a class="footer-contacts__contact" href="tel:+7 700 000 00 00"
+              <a class="footer-contacts__contact" href="tel:+77000000000"
                 >+7 700 000 00 00</a
               >
-              <a class="footer-contacts__contact" href="tel:+7 700 000 00 00"
+              <a class="footer-contacts__contact" href="tel:+77000000000"
                 >+7 700 000 00 00</a
               >
               <a class="footer-contacts__contact" href="mailto:support@test.kz"
@@ -143,37 +146,51 @@
               <ul class="footer-contacts__social-list">
                 <li class="footer-contacts__social-item">
                   <a href="" class="footer-contacts__social-link"
-                    ><img  class="footer-contacts__social-img" src="./images/footer-social-facebook.svg" alt="social icon"
+                    ><img
+                      class="footer-contacts__social-img"
+                      src="./images/footer-social-facebook.svg"
+                      alt="social icon"
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
                   <a href="" class="footer-contacts__social-link"
-                    ><img  class="footer-contacts__social-img" src="./images/footer-social-google.svg" alt="social icon"
+                    ><img
+                      class="footer-contacts__social-img"
+                      src="./images/footer-social-google.svg"
+                      alt="social icon"
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
                   <a href="" class="footer-contacts__social-link"
-                    ><img  class="footer-contacts__social-img" src="./images/footer-social-facebook.svg" alt="social icon"
+                    ><img
+                      class="footer-contacts__social-img"
+                      src="./images/footer-social-facebook.svg"
+                      alt="social icon"
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
                   <a href="" class="footer-contacts__social-link"
-                    ><img  class="footer-contacts__social-img" src="./images/footer-social-google.svg" alt="social icon"
+                    ><img
+                      class="footer-contacts__social-img"
+                      src="./images/footer-social-google.svg"
+                      alt="social icon"
                   /></a>
                 </li>
               </ul>
             </div>
+
             <div class="arrow-up">
-               <span class='arrow-up__text'>На верх</span>
-              <button class='arrow-up__btn' type="button" onclick="slowScroll('#header')"></button>
-             
-              
-      </div>
-    </div>
+              <span class="arrow-up__text">На верх</span>
+              <button
+                class="arrow-up__btn"
+                type="button"
+                onclick="slowScroll('#header')"
+              ></button>
+            </div>
           </div>
         </div>
       </footer>
-      
+    </div>
 
     <script src="js/main.min.js"></script>
   </body>

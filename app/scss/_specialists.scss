@@ -1,9 +1,12 @@
 .specialists {
   background-color: $white;
+  &__inner {
+    background-color: $blue;
+  }
   &__title {
     @extend %title;
-    // color: $white;
-    color: $blue;
+    color: $white;
+    padding-bottom: 20px;
   }
   &__list {
     display: grid;

@@ -22,7 +22,7 @@
                     <a class="navigation__link" href="">Главная</a>
                   </li>
                   <li class="navigation__item">
-                    <p class="navigation__link" services>Наши услуги</p>
+                    <p class="navigation__link" services-btn>Наши услуги</p>
                     <ul
                       class="navigation__drop-menu navigation__drop-menu--services"
                       services-list
@@ -82,14 +82,14 @@
                   </li>
                 </ul>
               </nav>
-              <button class="lang-switcher" langBtn>
+              <div class="lang-switcher" langBtn>
                 РУС
                 <ul class="lang-switcher__drop-menu" lang-list>
                   <li class="lang-switcher__drop-item">
                     <a class="lang-switcher__drop-link" href="">КАЗ</a>
                   </li>
                 </ul>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -159,122 +159,205 @@
         </section>
 
         <section class="services">
-          <div class="container">
-            <h2 class="services__title">наши услуги</h2>
-            <ul class="services__list">
-              <li class="services__item">
-                <div class="services__crop-img">
-                  <img
-                    class="services__img"
-                    src="./images/services-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="services__content-box">
-                <h3 class="services__name">Кардио-реаблитационный центр</h3>
-                <p class="services__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text
-                </p></div>
-              </li>
-              <li class="services__item">
-                <div class="services__crop-img">
-                  <img
-                    class="services__img"
-                    src="./images/services-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="services__content-box">
-                
-                <h3 class="services__name">Травма-реабилитационный центр</h3>
-                <p class="services__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text</div>
-                </p>
-              </li>
-              <li class="services__item">
-                <div class="services__crop-img">
-                  <img
-                    class="services__img"
-                    src="./images/services-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="services__content-box">
-                <h3 class="services__name">
-                  Кафе еда и еще слова что бы было две строки
-                </h3>
-                <p class="services__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text</div>
-                </p>
-              </li>
-              <li class="services__item">
-                <div class="services__crop-img">
-                  <img
-                    class="services__img"
-                    src="./images/services-4.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="services__content-box">
-                <h3 class="services__name">
-                  Сауна высшего класса для восстановления
-                </h3>
-                <p class="services__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text</div>
-                </p>
-              </li>
-            </ul>
-            <a class="section__link" href="">Все услуги</a>
+          <div class="services__inner">
+            <div class="container">
+              <h2 class="services__title">наши услуги</h2>
+              <ul class="services__list">
+                <li class="services__item">
+                  <div class="services__crop-img">
+                    <img
+                      class="services__img"
+                      src="./images/services-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services__content-box">
+                    <h3 class="services__name">Кардио-реаблитационный центр</h3>
+                    <p class="services__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </li>
+                <li class="services__item">
+                  <div class="services__crop-img">
+                    <img
+                      class="services__img"
+                      src="./images/services-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services__content-box">
+                    <h3 class="services__name">
+                      Травма-реабилитационный центр
+                    </h3>
+                    <p class="services__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </li>
+                <li class="services__item">
+                  <div class="services__crop-img">
+                    <img
+                      class="services__img"
+                      src="./images/services-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services__content-box">
+                    <h3 class="services__name">
+                      Кафе еда и еще слова что бы было две строки
+                    </h3>
+                    <p class="services__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </li>
+                <li class="services__item">
+                  <div class="services__crop-img">
+                    <img
+                      class="services__img"
+                      src="./images/services-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services__content-box">
+                    <h3 class="services__name">
+                      Сауна высшего класса для восстановления
+                    </h3>
+                    <p class="services__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="services__link-box">
+                <a class="services__link" href="">Все услуги</a>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="specialists">
+          <div class="specialists__inner">
+            <div class="container">
+              <h2 class="specialists__title">наши специалисты</h2>
+            </div>
+          </div>
           <div class="container">
-          <h2 class="specialists__title">наши специалисты(доделать)</h2>
-          <ul class="specialists__list">
-            <li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-1.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-2.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-3.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-4.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-1.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-2.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-3.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li><li class="specialists__item">
-              <img class="specialists__img" src="./images/specialists-4.png" alt="photo" >
-              <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
-              <p class="specialists__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </li>
-            
-          </ul>
+            <ul class="specialists__list">
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-1.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-2.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-3.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-4.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-1.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-2.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-3.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+              <li class="specialists__item">
+                <img
+                  class="specialists__img"
+                  src="./images/specialists-4.png"
+                  alt="photo"
+                />
+                <h3 class="specialists__name">Доктор Аблай Туркесович</h3>
+                <p class="specialists__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -282,85 +365,111 @@
           <div class="container">
             <h2 class="price-list__title">прайс лист</h2>
             <div class="price-list__inner">
-              
               <div class="price-list__box">
                 <div class="price-list__head">
                   <p class="price-list__name">Название услуги</p>
                   <p class="price-list__price">Стоимость</p>
                 </div>
-                  <ul class="price-list__list">
-                    <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                  </ul>
+                <ul class="price-list__list">
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                </ul>
               </div>
               <div class="price-list__box">
                 <div class="price-list__head">
                   <p class="price-list__name">Название услуги</p>
                   <p class="price-list__price">Стоимость</p>
                 </div>
-                  <ul class="price-list__list">
-                    <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                     <li class="price-list__item">
-                      <p class="price-list__service-name">Название услуги в несколько строк</p>
-                      <p class="price-list__service-price">3000 / час</p>
-                    </li>
-                  </ul>
+                <ul class="price-list__list">
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                  <li class="price-list__item">
+                    <p class="price-list__service-name">
+                      Название услуги в несколько строк
+                    </p>
+                    <p class="price-list__service-price">3000 / час</p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="price-list__link-box">
-            <a  class="price-list__link" href="">Все услуги</a>
+              <a class="price-list__link" href="">Все услуги</a>
             </div>
           </div>
-
         </section>
 
         <section class="news">
@@ -369,143 +478,413 @@
               <h2 class="news__title">Наши новости</h2>
               <ul class="news__list">
                 <li class="news__item">
-                  <img class="news__img" src="./images/news-1.jpg" alt="" >
-                  
-                  <div class="news__content
-">
-                  <h3 class="news__name">Название новости - Заголовок в две строки</h3>
-                  <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  <a class="news__link" href="" >Читать полностью</a></div>
+                  <img class="news__img" src="./images/news-1.jpg" alt="" />
+
+                  <div class="news__content">
+                    <h3 class="news__name">
+                      Название новости - Заголовок в две строки
+                    </h3>
+                    <p class="news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry
+                    </p>
+                    <a class="news__link" href="">Читать полностью</a>
+                  </div>
                 </li>
                 <li class="news__item">
-                  <img class="news__img" src="./images/news-2.jpg" alt="" >
-                  
+                  <img class="news__img" src="./images/news-2.jpg" alt="" />
+
                   <div class="news__content">
-                  <h3 class="news__name">Название новости - Заголовок в две строки</h3>
-                  <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  <a class="news__link" href="" >Читать полностью</a></div>
+                    <h3 class="news__name">
+                      Название новости - Заголовок в две строки
+                    </h3>
+                    <p class="news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry
+                    </p>
+                    <a class="news__link" href="">Читать полностью</a>
+                  </div>
                 </li>
                 <li class="news__item">
-                  <img class="news__img" src="./images/news-3.jpg" alt="" >
-                  
+                  <img class="news__img" src="./images/news-3.jpg" alt="" />
+
                   <div class="news__content">
-                  <h3 class="news__name">Название новости - Заголовок в две строки</h3>
-                  <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  <a class="news__link" href="" >Читать полностью</a></div>
+                    <h3 class="news__name">
+                      Название новости - Заголовок в две строки
+                    </h3>
+                    <p class="news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry
+                    </p>
+                    <a class="news__link" href="">Читать полностью</a>
+                  </div>
                 </li>
                 <li class="news__item">
-                  <img class="news__img" src="./images/news-4.jpg" alt="" >
-                  
+                  <img class="news__img" src="./images/news-4.jpg" alt="" />
+
                   <div class="news__content">
-                  <h3 class="news__name">Название новости - Заголовок в две строки</h3>
-                  <p class="news__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                  <a class="news__link" href="" >Читать полностью</a></div>
+                    <h3 class="news__name">
+                      Название новости - Заголовок в две строки
+                    </h3>
+                    <p class="news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry
+                    </p>
+                    <a class="news__link" href="">Читать полностью</a>
+                  </div>
                 </li>
               </ul>
               <div class="news__link-box">
-              <a class="news__link-more"  href="">Все новости</a>
+                <a class="news__link-more" href="">Все новости</a>
               </div>
             </div>
           </div>
         </section>
 
         <section class="faq">
-           
-      <div class="container">
-       <h2 class="faq__title">вопрос ответ</h2>
-        <div class="faq__inner">
-          <input class="faq__radio faq__radio-1" type="radio" name="name" id="q1" checked>
-          <input class="faq__radio faq__radio-2" type="radio" name="name" id="q2">
-          <input class="faq__radio faq__radio-3" type="radio" name="name" id="q3">
-          <input class="faq__radio faq__radio-4" type="radio" name="name" id="q4">
-           <input class="faq__radio faq__radio-5" type="radio" name="name" id="q5">
-            <input class="faq__radio faq__radio-6" type="radio" name="name" id="q6">
-             <input class="faq__radio faq__radio-7" type="radio" name="name" id="q7">
-              <input class="faq__radio faq__radio-8" type="radio" name="name" id="q8">
-         
-          
-          <div class="faq__switch">
-            <label class="faq__label faq__label-1" for="q1">Вопрос №1</label>
-            <label class="faq__label faq__label-2" for="q2">Вопрос №2</label>
-             <label class="faq__label faq__label-3" for="q3">Вопрос №3</label>
-           <label class="faq__label faq__label-4" for="q4">Вопрос №4</label>
-           <label class="faq__label faq__label-5" for="q5">Вопрос №5</label>
-           <label class="faq__label faq__label-6" for="q6">Вопрос №6</label>
-           <label class="faq__label faq__label-7" for="q7">Вопрос №7</label>
-           <label class="faq__label faq__label-8" for="q8">Вопрос №8</label>
+          <div class="container">
+            <h2 class="faq__title">вопрос ответ</h2>
+            <div class="faq__inner">
+              <input
+                class="faq__radio faq__radio-1"
+                type="radio"
+                name="name"
+                id="q1"
+                checked
+              />
+              <input
+                class="faq__radio faq__radio-2"
+                type="radio"
+                name="name"
+                id="q2"
+              />
+              <input
+                class="faq__radio faq__radio-3"
+                type="radio"
+                name="name"
+                id="q3"
+              />
+              <input
+                class="faq__radio faq__radio-4"
+                type="radio"
+                name="name"
+                id="q4"
+              />
+              <input
+                class="faq__radio faq__radio-5"
+                type="radio"
+                name="name"
+                id="q5"
+              />
+              <input
+                class="faq__radio faq__radio-6"
+                type="radio"
+                name="name"
+                id="q6"
+              />
+              <input
+                class="faq__radio faq__radio-7"
+                type="radio"
+                name="name"
+                id="q7"
+              />
+              <input
+                class="faq__radio faq__radio-8"
+                type="radio"
+                name="name"
+                id="q8"
+              />
+
+              <div class="faq__switch">
+                <label class="faq__label faq__label-1" for="q1"
+                  >Вопрос №1</label
+                >
+                <label class="faq__label faq__label-2" for="q2"
+                  >Вопрос №2</label
+                >
+                <label class="faq__label faq__label-3" for="q3"
+                  >Вопрос №3</label
+                >
+                <label class="faq__label faq__label-4" for="q4"
+                  >Вопрос №4</label
+                >
+                <label class="faq__label faq__label-5" for="q5"
+                  >Вопрос №5</label
+                >
+                <label class="faq__label faq__label-6" for="q6"
+                  >Вопрос №6</label
+                >
+                <label class="faq__label faq__label-7" for="q7"
+                  >Вопрос №7</label
+                >
+                <label class="faq__label faq__label-8" for="q8"
+                  >Вопрос №8</label
+                >
+              </div>
+
+              <div class="faq__answer-box">
+                <div class="faq__answer faq__answer-1">
+                  <h3 class="faq__answer-title">Ответ1</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-2">
+                  <h3 class="faq__answer-title">Ответ2</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-3">
+                  <h3 class="faq__answer-title">Ответ3</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-4">
+                  <h3 class="faq__answer-title">Ответ4</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-5">
+                  <h3 class="faq__answer-title">Ответ5</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-6">
+                  <h3 class="faq__answer-title">Ответ6</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-7">
+                  <h3 class="faq__answer-title">Ответ7</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <div class="faq__answer faq__answer-8">
+                  <h3 class="faq__answer-title">Ответ8</h3>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="faq__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="faq__answer-box">
-            <div class="faq__answer faq__answer-1">
-              <h3 class="faq__answer-title">Ответ1</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-
-            </div>
-            <div class="faq__answer faq__answer-2">
-              <h3 class="faq__answer-title">Ответ2</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-              
-            </div>
-            <div class="faq__answer faq__answer-3">
-              <h3 class="faq__answer-title">Ответ3</h3>
-             <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-            <div class="faq__answer faq__answer-4">
-              <h3 class="faq__answer-title">Ответ4</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-            <div class="faq__answer faq__answer-5">
-              <h3 class="faq__answer-title">Ответ5</h3>
-            <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-            <div class="faq__answer faq__answer-6">
-              <h3 class="faq__answer-title">Ответ6</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-            <div class="faq__answer faq__answer-7">
-              <h3 class="faq__answer-title">Ответ7</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-            <div class="faq__answer faq__answer-8">
-              <h3 class="faq__answer-title">Ответ8</h3>
-              <p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p class="faq__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-            </div>
-           
-            
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
+        </section>
 
         <section class="recommend">
           <div class="container">
             <div class="recommend__inner">
-            <h2 class="recommend__title">нас рекомендуют</h2>
-            <ul class="recommend__list">
-              <li class="recommend__item"><img class="recommend__img" src="./images/recommend-1.jpg" alt="image" ></li>
-              <li class="recommend__item"><img class="recommend__img" src="./images/recommend-2.jpg" alt="image" ></li>
-              <li class="recommend__item"><img class="recommend__img" src="./images/recommend-3.jpg" alt="image" ></li>
-              <li class="recommend__item"><img class="recommend__img" src="./images/recommend-4.jpg" alt="image" ></li>
-              <li class="recommend__item"><img class="recommend__img" src="./images/recommend-5.jpg" alt="image" ></li>
-            </ul>
+              <h2 class="recommend__title">нас рекомендуют</h2>
+              <ul class="recommend__list">
+                <li class="recommend__item">
+                  <img
+                    class="recommend__img"
+                    src="./images/recommend-1.jpg"
+                    alt="image"
+                  />
+                </li>
+                <li class="recommend__item">
+                  <img
+                    class="recommend__img"
+                    src="./images/recommend-2.jpg"
+                    alt="image"
+                  />
+                </li>
+                <li class="recommend__item">
+                  <img
+                    class="recommend__img"
+                    src="./images/recommend-3.jpg"
+                    alt="image"
+                  />
+                </li>
+                <li class="recommend__item">
+                  <img
+                    class="recommend__img"
+                    src="./images/recommend-4.jpg"
+                    alt="image"
+                  />
+                </li>
+                <li class="recommend__item">
+                  <img
+                    class="recommend__img"
+                    src="./images/recommend-5.jpg"
+                    alt="image"
+                  />
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -513,24 +892,51 @@
         <section class="contacts">
           <div class="container">
             <div class="contacts__inner">
-              <div class="contacts__title">контакты</div>
-              <div class="contacts__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A57722fdace88a6b78a7c134a677ee84bda1f2c31d02d1a4e22d30cccb4a434e1&amp;source=constructor" width="1170" height="360" frameborder="0"></iframe></div>
+              <h2 class="contacts__title">контакты</h2>
+              <div class="contacts__map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A57722fdace88a6b78a7c134a677ee84bda1f2c31d02d1a4e22d30cccb4a434e1&amp;source=constructor"
+                  width="1170"
+                  height="360"
+                  frameborder="0"
+                ></iframe>
+              </div>
               <div class="contacts__box">
                 <div class="contacts__address">
                   <p class="contacts__head">Адреса компании</p>
-                  <address class="contacts__body">Ул. Печугина 240/1, г. Караганда, 100000, Казахстан</address>
+                  <address class="contacts__body">
+                    Ул. Печугина 240/1, г. Караганда, 100000, Казахстан
+                  </address>
                 </div>
                 <div class="contacts__tel">
                   <p class="contacts__head">Номера телефонов</p>
-                  <ul class="contacts__list"><li class="contacts__item"><a class="contacts__body" href="tel:+7 700 000 00 00">+7 700 000 00 00</a></li><li class="contacts__item"><a class="contacts__body" href="tel:+7 700 000 00 00">+7 700 000 00 00</a></li></ul>
-                  
-                  
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a class="contacts__body" href="tel:+77000000000"
+                        >+7 700 000 00 00</a
+                      >
+                    </li>
+                    <li class="contacts__item">
+                      <a class="contacts__body" href="tel:+77000000000"
+                        >+7 700 000 00 00</a
+                      >
+                    </li>
+                  </ul>
                 </div>
                 <div class="contacts__communication">
                   <p class="contacts__head">Дополнительные способы связи</p>
-                  <ul class="contacts__list"><li class="contacts__item"><a class="contacts__body" href="mailto:support@test.kz">support@test.kz</a></li><li class="contacts__item"><a class="contacts__body" href="mailto:support@test.kz">support@test.kz</a></li></ul>
-                  
-                  
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a class="contacts__body" href="mailto:support@test.kz"
+                        >support@test.kz</a
+                      >
+                    </li>
+                    <li class="contacts__item">
+                      <a class="contacts__body" href="mailto:support@test.kz"
+                        >support@test.kz</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -595,10 +1001,10 @@
             </div>
             <div class="footer-contacts">
               <h3 class="footer-contacts__title">Связаться с нами</h3>
-              <a class="footer-contacts__contact" href="tel:+7 700 000 00 00"
+              <a class="footer-contacts__contact" href="tel:+77000000000"
                 >+7 700 000 00 00</a
               >
-              <a class="footer-contacts__contact" href="tel:+7 700 000 00 00"
+              <a class="footer-contacts__contact" href="tel:+77000000000"
                 >+7 700 000 00 00</a
               >
               <a class="footer-contacts__contact" href="mailto:support@test.kz"
