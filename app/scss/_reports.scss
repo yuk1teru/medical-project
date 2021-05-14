@@ -1,0 +1,96 @@
+.reports {
+  background-color: $blue;
+  &__inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__title {
+    @extend %title;
+    color: $white;
+    padding-bottom: 20px;
+  }
+  &__button-box {
+    padding-bottom: 50px;
+  }
+  &__button {
+    padding: 0;
+
+    color: $white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    & + & {
+      padding-left: 40px;
+    }
+  }
+  &__content-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  &__content-item {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: rgba($blue, 0.6);
+      transition: opacity 0.5s linear;
+    }
+    &:hover::before {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  &__link-popup {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 22px 45px;
+    font-weight: 500;
+    background-color: rgba($blue, 0.6);
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 54px;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s linear 0.05s;
+    cursor: pointer;
+    .reports__content-item:hover & {
+      opacity: 1;
+    }
+  }
+  &__text--play {
+    position: relative;
+    &::before {
+      content: "";
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: -45px;
+      background-image: url("../images/icon-play-report.svg");
+      cursor: pointer;
+    }
+  }
+  &__text {
+    position: absolute;
+    left: 20px;
+    right: 19px;
+    bottom: 20px;
+
+    max-width: 253px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba($white, 0.8);
+
+    transition: opacity 0.03s linear;
+    .reports__content-item:hover & {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
