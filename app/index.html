@@ -484,27 +484,42 @@
             <div class="reports__inner">
               <h2 class="reports__title">фото и видео отчеты</h2>
               <div class="reports__button-box">
-                <label
-                  ><button
-                    class="reports__button"
+                <input
+                    class="reports__radio-button reports__radio-button--all "
+                    id="reports-all"
                     type="radio"
                     data-filter="all"
-                  ></button>
+                    name="reports-radio"
+                  ></input>
+                  <input
+                    class="reports__radio-button reports__radio-button--photo"
+                    id="reports-photo"
+                    type="radio"
+                    data-filter=".photo"
+                    name="reports-radio"
+                  ></input
+                  >
+                  <input
+                    class="reports__radio-button reports__radio-button--video"
+                    id="reports-video"
+                    type="radio"
+                    data-filter=".video"
+                    name="reports-radio"
+                  ></input>
+
+                <label  class="reports__label reports__label--all" for="reports-all"
+                  >
                   показать все</label
                 >
-                <button
-                  class="reports__button"
-                  type="button"
-                  data-filter=".photo"
-                >
-                  только фото</button
-                ><button
-                  class="reports__button"
-                  type="button"
-                  data-filter=".video"
-                >
+
+                <label class="reports__label reports__label--photo" for="reports-photo">
+                  только фото
+                </label>
+
+                <label class="reports__label reports__label--video" for="reports-video"
+                  >
                   только видео
-                </button>
+                </label>
               </div>
               <div class="slider">
                 <ul class="reports__content-box">

@@ -35,16 +35,53 @@
   &__button-box {
     padding-bottom: 50px;
   }
-  &__button {
-    padding: 0;
 
+  &__label {
+    position: relative;
     color: $white;
-    background-color: transparent;
-    border: none;
+
     cursor: pointer;
     & + & {
       margin-left: 40px;
     }
+  }
+  &__radio-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__radio-button--all:checked ~ &__label--all::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+  }
+  &__radio-button--photo:checked ~ &__label--photo::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+  }
+  &__radio-button--video:checked ~ &__label--video::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
   }
   &__content-box {
     display: grid;
