@@ -40,6 +40,8 @@
     blueHide.classList.toggle("call-menu__item--blue-hide");
     greenHide.classList.toggle("call-menu__item--green-hide");
   });
+
+  var Mixer = mixitup(".reports__content-box");
 })();
 
 function slowScroll(id) {

@@ -1,8 +1,31 @@
 .reports {
   background-color: $blue;
+
   &__inner {
+    position: relative;
+    z-index: 2;
     padding-top: 70px;
     padding-bottom: 70px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 100%;
+      top: 0;
+      right: 204px;
+      background-color: #49647d;
+      z-index: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 100%;
+      top: 0;
+      right: 86px;
+      background-color: #49647d;
+      z-index: -1;
+    }
   }
   &__title {
     @extend %title;
@@ -20,13 +43,14 @@
     border: none;
     cursor: pointer;
     & + & {
-      padding-left: 40px;
+      margin-left: 40px;
     }
   }
   &__content-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 50px;
   }
   &__content-item {
     position: relative;
@@ -93,4 +117,76 @@
       pointer-events: none;
     }
   }
+  &__link-box {
+    text-align: center;
+  }
+  &__link {
+    color: $white;
+    @extend %btn-border;
+  }
+}
+
+.fancybox-bg {
+  background-color: transparent;
+}
+
+.fancybox-navigation .fancybox-button {
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+.fancybox-navigation .fancybox-button--arrow_left {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  background-image: url("../images/reports-arrow-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  left: 164px;
+}
+.fancybox-navigation .fancybox-button--arrow_right {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  background-image: url("../images/reports-arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  right: 162px;
+}
+.fancybox-button--close {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  background-image: url("../images/reports-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+}
+
+.fancybox-toolbar {
+  top: 7%;
+  right: 184px;
+}
+.fancybox-content iframe,
+.fancybox-content {
+  max-width: 947px !important;
+  max-height: 582px !important;
+}
+
+.fancybox-button div,
+.fancybox-button.fancybox-button--zoom,
+.fancybox-infobar,
+.fancybox-button.fancybox-button--play,
+.fancybox-button--close svg {
+  display: none !important;
 }

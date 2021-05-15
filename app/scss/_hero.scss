@@ -31,13 +31,18 @@
   }
 
   &__text {
-    max-width: 220px;
+    max-width: 329px;
+    font-weight: 600;
     margin-bottom: 30px;
 
     line-height: 1.21;
+    &--right {
+      max-width: 250px;
+    }
   }
+
   &__services-list {
-    max-width: 220px;
+    max-width: 300px;
     margin-bottom: 90px;
   }
   &__services-item {
@@ -66,7 +71,7 @@
     }
     &--right {
       padding-left: 18px;
-
+      max-width: 274px;
       &::before {
         left: 0;
         background-image: url("../images/right-hero-circle.svg");
@@ -134,7 +139,7 @@
     background-image: url("../images/right-hero.png");
     background-repeat: no-repeat;
     transition: transform 0.3s linear;
-    transform: translateX(-135px);
+    transform: translateX(-95px);
   }
   .hero__left:hover + & {
     transform: translateX(80px);

@@ -1,6 +1,9 @@
 .specialists {
   background-color: $white;
   &__inner {
+    padding-bottom: 70px;
+  }
+  &__wrapper {
     background-color: $blue;
   }
   &__title {
@@ -32,6 +35,13 @@
 
     font-weight: 800;
     font-size: 16px;
+    color: $blue;
+  }
+  &__link-box {
+    text-align: center;
+  }
+  &__link {
+    @extend %btn-border;
     color: $blue;
   }
 }

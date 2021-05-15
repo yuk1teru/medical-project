@@ -1,17 +1,46 @@
 .price-list {
   &__title {
-    margin-top: 70px;
     margin-bottom: 20px;
     @extend %title;
     color: $blue;
   }
-
   &__inner {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 100%;
+      top: 0;
+      right: 204px;
+      background-color: #f3f5fa;
+      z-index: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 100%;
+      top: 0;
+      right: 86px;
+      background-color: #f3f5fa;
+      z-index: -1;
+    }
+  }
+  &__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+
+    position: relative;
+    z-index: 2;
   }
   &__box {
     flex-grow: 1;
+    margin-right: 50px;
     & + & {
       margin-left: 78px;
     }
@@ -49,7 +78,6 @@
     color: $blue;
   }
   &__link-box {
-    margin: 40px 0;
     text-align: center;
   }
 }

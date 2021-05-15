@@ -61,12 +61,17 @@
   }
 
   &__name {
+    // min-height: 60px; как лучше к дизайнеру
     padding-bottom: 20px;
 
     font-size: 16px;
   }
   &__text {
     line-height: 1.21;
+    transform: translateY(20px);
+    .services__item:hover & {
+      transform: translateY(0);
+    }
   }
   &__link-box {
     text-align: center;
