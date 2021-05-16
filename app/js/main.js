@@ -40,8 +40,35 @@
     blueHide.classList.toggle("call-menu__item--blue-hide");
     greenHide.classList.toggle("call-menu__item--green-hide");
   });
+  let containerReports = document.querySelector('[data-ref="reports"]');
+  let containerNews = document.querySelector('[data-ref="news"]');
+  let config = {
+    controls: {
+      scope: "local",
+    },
+  };
+  let MixerReports = mixitup(containerReports, config);
+  let MixerNews = mixitup(containerNews, config);
 
-  var Mixer = mixitup(".reports__content-box");
+  const reportsFilterBtns = document.querySelectorAll("[name=reports-radio]");
+  const reportsElements = document.querySelectorAll(".reports__content-item");
+
+  reportsFilterBtns.forEach((elem) => {
+    elem.addEventListener("click", elemFilterForSlider);
+  });
+
+  function elemFilterForSlider() {
+    reportsElements.forEach((elem) => {
+      setTimeout(() => {
+        const zoomLink = elem.querySelector(".reports__link-popup");
+        if (elem.style.display === "none") {
+          zoomLink.setAttribute("data-fancybox", "qwe");
+        } else {
+          zoomLink.setAttribute("data-fancybox", "reports");
+        }
+      }, 1000);
+    });
+  }
 })();
 
 function slowScroll(id) {

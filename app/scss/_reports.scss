@@ -63,7 +63,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: red;
+    background-color: $red;
   }
   &__radio-button--photo:checked ~ &__label--photo::after {
     content: "";
@@ -72,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: red;
+    background-color: $red;
   }
   &__radio-button--video:checked ~ &__label--video::after {
     content: "";
@@ -81,7 +81,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: red;
+    background-color: $red;
   }
   &__content-box {
     display: grid;
