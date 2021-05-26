@@ -86,12 +86,14 @@
     border: 1px solid currentColor;
   }
 }
+
 .hero-wrapper {
-  width: 1800px;
+  width: calc(100vw - 17px);
+  // min-width: 1800px;
   min-height: 800px;
   display: flex;
   margin: 0 auto;
-  transform: translateX(-200px);
+  // transform: translateX(-200px);
 }
 
 .hero__left {

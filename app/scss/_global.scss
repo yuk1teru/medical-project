@@ -30,7 +30,7 @@ body {
 
 // Кнопка Связаться
 .call-menu {
-  display: none;
+  // display: none;
   position: sticky;
   bottom: 5px;
   z-index: 50;
@@ -166,4 +166,8 @@ body {
   100% {
     opacity: 0.5;
   }
+}
+
+.header__inner--primary {
+  margin-bottom: 100px;
 }
