@@ -1,47 +1,30 @@
 .header {
-  &--cardio {
-    background-image: url("../images/cardio-header-bg.jpg");
+  &--injury {
+    background-image: url("../images/injury-header-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  &__title {
-    @extend %title;
-    color: $white;
-    max-width: 672px;
-    margin-bottom: 20px;
+
+  &__title--blue {
+    color: $blue;
+    max-width: 706px;
   }
-  &__text {
-    font-weight: 600;
-    line-height: 1.21;
-    color: $white;
-    margin-bottom: 77px;
+  &__text--blue {
+    color: $blue;
+    max-width: 610px;
+    margin-bottom: 60px;
   }
 }
 
-.navigation {
-  &__item--white {
-    color: $white;
-  }
-  &__item--white:nth-child(even) &__link::after {
-    background-image: url("../images/drop-arrow-white.svg");
-  }
-}
-
-.lang-switcher--white {
-  &::after {
-    background-image: url("../images/drop-arrow-white.svg");
-  }
-  color: $white;
-}
-.container.cardio-info__container {
+.container.injury-info__container {
   &::before {
     content: "";
     position: absolute;
     left: 0;
     width: 395px;
     height: 100%;
-    background-image: url("../images/cardio-info-before.png");
+    background-image: url("../images/injury-info-before.png");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,13 +36,13 @@
     right: 0;
     width: 370px;
     height: 100%;
-    background-image: url("../images/cardio-info-after.jpg");
+    background-image: url("../images/injury-info-after.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-.cardio-info {
+.injury-info {
   position: relative;
   background-color: $blue;
   color: $white;
@@ -69,17 +52,8 @@
   &__inner {
     max-width: 635px;
     margin: 0 auto;
-    padding: 74px 57px 74px 50px;
+    padding: 86px 53px 86px 54px;
     background-color: rgba($white, 0.1);
-  }
-  &__title {
-    font-size: 14px;
-  }
-  &__text {
-    margin-top: 30px;
-  }
-  &__list {
-    padding-left: 15px;
   }
 }
 
