@@ -1,0 +1,19 @@
+.header {
+  &--services {
+    background-image: url("../images/our-services-page-header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 348px;
+    & .header__text--blue {
+      max-width: 672px;
+    }
+  }
+}
+
+.services {
+  &__inner--no-padding-bottom,
+  &__list--no-padding-bottom {
+    padding-bottom: 0;
+  }
+}
