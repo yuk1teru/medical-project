@@ -1,0 +1,35 @@
+.header--reports-bg {
+  background-image: url("../images/reports-bg.jpg");
+}
+
+.navigation__item--white-red-arrow,
+.lang-switcher--white-red-arrow {
+  color: $white;
+}
+
+.reports-page {
+  position: relative;
+}
+.reports {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 57px;
+    background-color: #2b3946;
+  }
+  &__inner--no-pseudo {
+    padding-top: 0;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  &__button-box--padding {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+}
