@@ -1,0 +1,114 @@
+.header--specialists-bg {
+  background-image: url("../images/specialist-page-header-bg.jpg");
+}
+
+.our-specialists {
+  background-color: $white;
+
+  &__inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  &__tabs-triggers {
+    display: flex;
+  }
+
+  &__trigger-item {
+    max-width: 145px;
+    text-align: center;
+    color: $blue;
+    & + & {
+      margin-left: 50px;
+    }
+
+    &--active {
+      color: $red;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        z-index: -2;
+        width: 118px;
+        height: 118px;
+        background-color: rgba($red, 0.5);
+        border-radius: 50%;
+        animation: tabs-ring 0.2s 1;
+      }
+    }
+  }
+  &__tabs-triggers {
+    margin-bottom: 50px;
+  }
+
+  &__photo {
+    position: relative;
+    z-index: -1;
+    margin: 0 auto 20px;
+  }
+
+  &__name {
+    position: relative;
+    z-index: -1;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &__content-item {
+    position: absolute;
+    transform: translateX(-20%);
+
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+      transform 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+    &--active {
+      position: relative;
+      display: block;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &__content-name {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  &__content-info {
+    display: flex;
+    max-width: 860px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content-title {
+    min-width: 115px;
+    max-width: 115px;
+    margin-right: 25px;
+    color: $red;
+    font-weight: 700;
+    line-height: 1.21;
+  }
+  &__content-text {
+    color: #333333;
+    line-height: 1.21;
+  }
+}
+
+@keyframes tabs-ring {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,6 +1,15 @@
 .header {
   position: relative;
   z-index: 1;
+  &--secondary {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 348px;
+    & .header__text--blue {
+      max-width: 672px;
+    }
+  }
 }
 .header__inner {
   display: flex;

@@ -53,9 +53,6 @@
     },
   };
 
-  let MixerReports = mixitup(containerReports, config);
-  let MixerNews = mixitup(containerNews, config);
-
   const reportsFilterBtns = document.querySelectorAll("[name=reports-radio]");
 
   const reportsElements = document.querySelectorAll(".reports__content-item");
@@ -76,6 +73,34 @@
       }, 1000);
     });
   }
+
+  //
+  document.querySelectorAll(".our-specialists__trigger-item").forEach((item) =>
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.getAttribute("href").replace("#", "");
+      document
+        .querySelectorAll(".our-specialists__trigger-item")
+        .forEach((child) =>
+          child.classList.remove("our-specialists__trigger-item--active")
+        );
+
+      document
+        .querySelectorAll(".our-specialists__content-item")
+        .forEach((child) =>
+          child.classList.remove("our-specialists__content-item--active")
+        );
+
+      item.classList.add("our-specialists__trigger-item--active");
+      document
+        .getElementById(id)
+        .classList.add("our-specialists__content-item--active");
+    })
+  );
+
+  //
+  let MixerReports = mixitup(containerReports, config);
+  let MixerNews = mixitup(containerNews, config);
 })();
 
 function slowScroll(id) {
