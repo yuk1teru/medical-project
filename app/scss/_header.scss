@@ -10,6 +10,25 @@
       max-width: 672px;
     }
   }
+  &--cardio {
+    background-image: url("../images/cardio-header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    @extend %title;
+    @extend %text-max-row;
+    color: $white;
+    max-width: 672px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 600;
+    line-height: 1.21;
+    color: $white;
+    margin-bottom: 77px;
+  }
 }
 .header__inner {
   display: flex;

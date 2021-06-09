@@ -1,0 +1,76 @@
+.header--post-bg {
+  background-image: url(../images/post-page-bg.jpg);
+}
+
+.header__title--post {
+  max-width: 770px;
+}
+
+.bread-crumbs {
+  background-color: #2b3946;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    margin-right: 28px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -18px;
+      width: 8px;
+      height: 8px;
+      transform: translateY(-50%);
+      background-image: url("../images/bread-crumbs-arrow.svg");
+    }
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    font-weight: 500;
+    color: #8093ac;
+  }
+}
+
+.post {
+  background-color: $white;
+  &__inneer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $blue;
+    margin-bottom: 20px;
+  }
+  &__content {
+    display: flex;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &__content:nth-child(even) &__block-text {
+    padding-right: 50px;
+  }
+  &__content:nth-child(odd) &__block-text {
+    padding-left: 50px;
+  }
+  &__text {
+    & + & {
+      padding-top: 30px;
+    }
+  }
+}
