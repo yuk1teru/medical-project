@@ -94,6 +94,7 @@
   }
   &__name {
     font-weight: 800;
+    @extend %text-max-row;
   }
   &__text {
     margin: 20px 0;

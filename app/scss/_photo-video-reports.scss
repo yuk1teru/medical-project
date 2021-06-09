@@ -9,8 +9,6 @@
 
 .reports-page {
   position: relative;
-}
-.reports {
   &::before {
     position: absolute;
     top: 0;
@@ -21,6 +19,8 @@
     height: 57px;
     background-color: #2b3946;
   }
+}
+.reports {
   &__inner--no-pseudo {
     padding-top: 0;
     &::before,

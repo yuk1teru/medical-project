@@ -45,7 +45,10 @@
   });
 
   let containerReports = document.querySelector('[data-ref="reports"]');
+
   let containerNews = document.querySelector('[data-ref="news"]');
+
+  let containerAdvice = document.querySelector('[data-ref="advice"]');
 
   let config = {
     controls: {
@@ -99,8 +102,16 @@
   );
 
   //
-  let MixerReports = mixitup(containerReports, config);
-  let MixerNews = mixitup(containerNews, config);
+  if (containerReports) {
+    let MixerReports = mixitup(containerReports, config);
+  }
+  if (containerNews) {
+    let MixerNews = mixitup(containerNews, config);
+  }
+
+  if (containerAdvice) {
+    let MixerAdvice = mixitup(containerAdvice, config);
+  }
 })();
 
 function slowScroll(id) {
