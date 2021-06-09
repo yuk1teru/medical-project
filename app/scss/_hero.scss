@@ -3,6 +3,7 @@
   min-height: 800px;
   margin: -65px auto 0;
   overflow-x: hidden;
+
   &__content {
     max-width: 450px;
     padding-top: 200px;
@@ -10,6 +11,8 @@
     display: flex;
     flex-direction: column;
     &--left {
+      position: relative;
+      z-index: 1;
       margin-right: 100px;
       margin-left: auto;
       align-items: flex-end;
@@ -89,11 +92,16 @@
 
 .hero-wrapper {
   width: calc(100vw - 17px);
-  // min-width: 1800px;
+
+  background: rgb(233, 82, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 82, 88, 1) 50%,
+    rgba(249, 249, 249, 1) 50%
+  );
   min-height: 800px;
   display: flex;
   margin: 0 auto;
-  // transform: translateX(-200px);
 }
 
 .hero__left {
@@ -105,7 +113,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 195px;
+    left: 0vw;
     width: 395px;
     height: 557px;
     background-image: url("../images/left-hero.png");
@@ -135,13 +143,13 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0vw;
     width: 487px;
     height: 488px;
     background-image: url("../images/right-hero.png");
     background-repeat: no-repeat;
     transition: transform 0.3s linear;
-    transform: translateX(-95px);
+    transform: translateX(95px);
   }
   .hero__left:hover + & {
     transform: translateX(80px);
