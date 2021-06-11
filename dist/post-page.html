@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Отчеты</title>
+    <title>Новость или совет</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <header class="header header--reports-bg header--secondary" id="header">
+      <header class="header header--post-bg header--secondary" id="header">
         <div class="container">
           <div class="header__inner header__inner--primary">
             <a class="logo__link" href="./index.html"
@@ -137,279 +137,161 @@
             </div>
           </div>
           <div class="header__content">
-            <h1 class="header__title">фото и видео отчеты</h1>
-            <p class="header__text">
-              Фото и видеоматериалы позволят вам ознакомиться с различными
-              этапами нашей работы
-            </p>
+            <h1 class="header__title header__title--post">
+              название новости или совета в две строки не более
+            </h1>
           </div>
         </div>
       </header>
       <main class="main">
-        <section class="reports reports-page">
-          <h2 class="reports-section__title">ФОТО И ВИДЕО ОТЧЕТЫ</h2>
+        <div class="bread-crumbs">
           <div class="container">
-            <div
-              class="reports__inner reports__inner--no-pseudo"
-              data-ref="reports"
-            >
-              <div class="reports__button-box reports__button-box--padding">
-                <input
-                  class="reports__radio-button reports__radio-button--all"
-                  id="reports-all"
-                  type="radio"
-                  data-filter=".reports__content-item"
-                  name="reports-radio"
-                  checked
-                />
-                <input
-                  class="reports__radio-button reports__radio-button--photo"
-                  id="reports-photo"
-                  type="radio"
-                  data-filter=".photo"
-                  name="reports-radio"
-                />
-                <input
-                  class="reports__radio-button reports__radio-button--video"
-                  id="reports-video"
-                  type="radio"
-                  data-filter=".video"
-                  name="reports-radio"
-                />
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__item">
+                <a href="./index.html" class="bread-crumbs__link">главная</a>
+              </li>
+              <li class="bread-crumbs__item">
+                <a href="./photo-video-reports.html" class="bread-crumbs__link"
+                  >наши новости и советы</a
+                >
+              </li>
+              <li class="bread-crumbs__item">
+                <a href="./post-page.html" class="bread-crumbs__link">
+                  название новости или совета в две строки не более
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <label
-                  class="reports__label reports__label--all"
-                  for="reports-all"
-                >
-                  показать все</label
-                >
+        <section class="post">
+          <div class="container">
+            <div class="post__inneer">
+              <h2 class="post__title">
+                Так выглядит заголовок внутри текстового поля
+              </h2>
 
-                <label
-                  class="reports__label reports__label--photo"
-                  for="reports-photo"
-                >
-                  только фото
-                </label>
-
-                <label
-                  class="reports__label reports__label--video"
-                  for="reports-video"
-                >
-                  только видео
-                </label>
+              <div class="post__content">
+                <div class="post__block-text">
+                  <p class="post__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas rhoncus lacinia ligula, sed congue tellus faucibus
+                    malesuada. Quisque varius tellus velit, in fringilla lectus
+                    elementum et. Donec semper feugiat nisl, suscipit porta
+                    massa. Aenean mattis gravida ex eu fringilla. Suspendisse
+                    arcu orci, feugiat id massa in, aliquam semper justo.
+                    Maecenas non ullamcorper dui. Mauris consectetur sapien
+                    lacus, eu egestas tortor hendrerit sit amet.
+                  </p>
+                  <p class="post__text">
+                    Morbi ut purus massa. Maecenas ac hendrerit quam. Morbi
+                    viverra urna sed finibus viverra. Aenean nec placerat nunc.
+                    Pellentesque convallis imperdiet lorem sit amet
+                    sollicitudin. Nunc tincidunt bibendum dapibus. Ut
+                    condimentum vel leo sed consequat. Proin in viverra velit,
+                    quis consequat ipsum. Pellentesque convallis rhoncus sapien
+                    vitae venenatis. Proin porta erat et diam viverra posuere.
+                    Integer ut lectus dui. Proin venenatis convallis dapibus.
+                    Cras pellentesque faucibus est eget malesuada.
+                  </p>
+                  <p class="post__text">
+                    Suspendisse a magna et elit ullamcorper mollis. Nunc vitae
+                    vulputate arcu. Quisque tempor est non diam mollis, vitae
+                    tincidunt turpis vestibulum. Phasellus volutpat velit vitae
+                    nulla dapibus varius. Nam ultrices, neque ut venenatis
+                    sodales, enim metus pretium diam, vel aliquam eros mi vitae
+                    enim. Etiam nulla ipsum, tincidunt a tempor id, pharetra
+                    commodo ante. Sed at mollis mi. Etiam convallis finibus
+                    tortor in maximus.
+                  </p>
+                  <p class="post__text">
+                    Sed in ultrices lacus. Donec nisl nisl, scelerisque at leo
+                    sed, placerat elementum magna. Sed consequat, nisl eu porta
+                    dictum, velit libero malesuada turpis, non gravida mauris
+                    magna id lectus. Fusce at eros molestie, interdum arcu
+                    vitae, dignissim erat. Aliquam convallis lacus nec nisi
+                    ornare, eget viverra leo faucibus. Donec vel nisi vitae nibh
+                    finibus tincidunt. Suspendisse bibendum dapibus magna, in
+                    faucibus tortor faucibus eget.
+                  </p>
+                  <p class="post__text">
+                    Phasellus in aliquet turpis. Mauris lorem est, imperdiet
+                    pharetra imperdiet quis, luctus eu velit. Sed et tempor
+                    erat. Donec pharetra orci tortor, nec elementum felis
+                    consectetur ut. Proin molestie risus mauris, non tincidunt
+                    quam sollicitudin sed. Pellentesque scelerisque purus a mi
+                    cursus, tempor viverra arcu ornare. Nunc nec eros et neque
+                    lacinia mattis at in lorem. Duis in imperdiet lectus, in
+                    gravida lacus.
+                  </p>
+                </div>
+                <img
+                  class="post__content-img"
+                  src="./images/post-img-1.jpg"
+                  alt="image"
+                  width="400"
+                />
               </div>
-              <div class="slider">
-                <ul class="reports__content-box">
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-1.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-1.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix video">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-2.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-2.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text reports__text--play">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-3.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-3.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-4.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-4.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-5.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-5.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix video">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-6.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-6.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text reports__text--play">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-7.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-7.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-8.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-8.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-9.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-9.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix video">
-                    <a
-                      class="reports__link-popup"
-                      href="https://youtu.be/KTji1hOICEI"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-10.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text reports__text--play">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-11.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-11.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                  <li class="reports__content-item mix photo">
-                    <a
-                      class="reports__link-popup"
-                      href="./images/report-12.jpg"
-                      data-fancybox="reports"
-                      >Увеличить</a
-                    >
-                    <img
-                      class="reports__img"
-                      src="./images/report-thumbnail-12.jpg"
-                      alt="image"
-                      width="293"
-                    />
-                    <p class="reports__text">
-                      Название фото в две cтроки максимум
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="reports__link-box">
-                <a class="reports__link" href="./photo-video-reports.html"
-                  >Показать все</a
-                >
+              <div class="post__content">
+                <div class="post__block-text">
+                  <p class="post__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas rhoncus lacinia ligula, sed congue tellus faucibus
+                    malesuada. Quisque varius tellus velit, in fringilla lectus
+                    elementum et. Donec semper feugiat nisl, suscipit porta
+                    massa. Aenean mattis gravida ex eu fringilla. Suspendisse
+                    arcu orci, feugiat id massa in, aliquam semper justo.
+                    Maecenas non ullamcorper dui. Mauris consectetur sapien
+                    lacus, eu egestas tortor hendrerit sit amet.
+                  </p>
+                  <p class="post__text">
+                    Morbi ut purus massa. Maecenas ac hendrerit quam. Morbi
+                    viverra urna sed finibus viverra. Aenean nec placerat nunc.
+                    Pellentesque convallis imperdiet lorem sit amet
+                    sollicitudin. Nunc tincidunt bibendum dapibus. Ut
+                    condimentum vel leo sed consequat. Proin in viverra velit,
+                    quis consequat ipsum. Pellentesque convallis rhoncus sapien
+                    vitae venenatis. Proin porta erat et diam viverra posuere.
+                    Integer ut lectus dui. Proin venenatis convallis dapibus.
+                    Cras pellentesque faucibus est eget malesuada.
+                  </p>
+                  <p class="post__text">
+                    Suspendisse a magna et elit ullamcorper mollis. Nunc vitae
+                    vulputate arcu. Quisque tempor est non diam mollis, vitae
+                    tincidunt turpis vestibulum. Phasellus volutpat velit vitae
+                    nulla dapibus varius. Nam ultrices, neque ut venenatis
+                    sodales, enim metus pretium diam, vel aliquam eros mi vitae
+                    enim. Etiam nulla ipsum, tincidunt a tempor id, pharetra
+                    commodo ante. Sed at mollis mi. Etiam convallis finibus
+                    tortor in maximus.
+                  </p>
+                  <p class="post__text">
+                    Sed in ultrices lacus. Donec nisl nisl, scelerisque at leo
+                    sed, placerat elementum magna. Sed consequat, nisl eu porta
+                    dictum, velit libero malesuada turpis, non gravida mauris
+                    magna id lectus. Fusce at eros molestie, interdum arcu
+                    vitae, dignissim erat. Aliquam convallis lacus nec nisi
+                    ornare, eget viverra leo faucibus. Donec vel nisi vitae nibh
+                    finibus tincidunt. Suspendisse bibendum dapibus magna, in
+                    faucibus tortor faucibus eget.
+                  </p>
+                  <p class="post__text">
+                    Phasellus in aliquet turpis. Mauris lorem est, imperdiet
+                    pharetra imperdiet quis, luctus eu velit. Sed et tempor
+                    erat. Donec pharetra orci tortor, nec elementum felis
+                    consectetur ut. Proin molestie risus mauris, non tincidunt
+                    quam sollicitudin sed. Pellentesque scelerisque purus a mi
+                    cursus, tempor viverra arcu ornare. Nunc nec eros et neque
+                    lacinia mattis at in lorem. Duis in imperdiet lectus, in
+                    gravida lacus.
+                  </p>
+                </div>
+                <img
+                  class="post__content-img"
+                  src="./images/post-img-2.jpg"
+                  alt="image"
+                  width="400"
+                />
               </div>
             </div>
           </div>
@@ -546,11 +428,8 @@
               ></a>
             </li>
             <li class="call-menu__item call-menu__item--green-hide" green-hide>
-              <a
-                class="call-menu__link call-menu__link--green"
-                href="#"
-                target="_blank"
-              ></a>
+              <a class="call-menu__link call-menu__link--green" href="#"
+                target="_blank"></a>
             </li>
           </ul>
         </div>
@@ -578,19 +457,13 @@
                   <a href="./index.html" class="site-map__link">Главная</a>
                 </li>
                 <li class="site-map__item">
-                  <a href="./services-page.html" class="site-map__link"
-                    >Наши услуги</a
-                  >
+                  <a href="./services-page.html" class="site-map__link">Наши услуги</a>
                 </li>
                 <li class="site-map__item">
-                  <a href="./photo-video-reports.html" class="site-map__link"
-                    >Отчеты</a
-                  >
+                  <a href="./photo-video-reports.html" class="site-map__link">Отчеты</a>
                 </li>
                 <li class="site-map__item">
-                  <a href="./specialists-page.html" class="site-map__link"
-                    >О нас</a
-                  >
+                  <a href="./specialists-page.html" class="site-map__link">О нас</a>
                 </li>
                 <li class="site-map__item">
                   <a href="./find-us.html" class="site-map__link">Контакты</a>
