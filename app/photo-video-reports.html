@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Отчеты</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -12,17 +12,26 @@
       <header class="header header--reports-bg header--secondary" id="header">
         <div class="container">
           <div class="header__inner header__inner--primary">
-            <a class="logo__link" href=""
+            <a class="logo__link" href="./index.html"
               ><img class="logo__img" src="./images/logo-white.svg" alt=""
             /></a>
             <div class="menu-box">
               <nav class="navigation">
                 <ul class="navigation__list">
-                  <li class="navigation__item navigation__item--white-red-arrow">
-                    <a class="navigation__link" href="">Главная</a>
+                  <li
+                    class="navigation__item navigation__item--white-red-arrow"
+                  >
+                    <a class="navigation__link" href="./index.html">Главная</a>
                   </li>
-                  <li class="navigation__item navigation__item--white-red-arrow">
-                    <p class="navigation__link" services-btn>Наши услуги</p>
+                  <li
+                    class="navigation__item navigation__item--white-red-arrow"
+                  >
+                    <a
+                      class="navigation__link"
+                      href="./services-page.html"
+                      services-btn
+                      >Наши услуги</a
+                    >
                     <ul
                       class="
                         navigation__drop-menu navigation__drop-menu--services
@@ -30,57 +39,90 @@
                       services-list
                     >
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./injury-index.html"
                           >Травма-реабилитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./cardio-index.html"
                           >Кардио-реаблитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./injury-index.html"
                           >Травма-реабилитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./cardio-index.html"
                           >Кардио-реаблитационный центр</a
                         >
                       </li>
                     </ul>
                   </li>
-                  <li class="navigation__item navigation__item--white-red-arrow">
-                    <a class="navigation__link" href="">Отчеты</a>
+                  <li
+                    class="navigation__item navigation__item--white-red-arrow"
+                  >
+                    <a
+                      class="navigation__link"
+                      href="./photo-video-reports.html"
+                      >Отчеты</a
+                    >
                   </li>
-                  <li class="navigation__item navigation__item--white-red-arrow">
-                    <p class="navigation__link" about>О нас</p>
+                  <li
+                    class="navigation__item navigation__item--white-red-arrow"
+                  >
+                    <a
+                      class="navigation__link"
+                      href="./specialists-page.html"
+                      about
+                      >О нас</a
+                    >
                     <ul class="navigation__drop-menu" about-list>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./injury-index.html"
                           >Травма-реабилитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./cardio-index.html"
                           >Кардио-реаблитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./injury-index.html"
                           >Травма-реабилитационный центр</a
                         >
                       </li>
                       <li class="navigation__drop-item">
-                        <a class="navigation__drop-link" href=""
+                        <a
+                          class="navigation__drop-link"
+                          href="./cardio-index.html"
                           >Кардио-реаблитационный центр</a
                         >
                       </li>
                     </ul>
                   </li>
-                  <li class="navigation__item navigation__item--white-red-arrow">
-                    <a class="navigation__link" href="">Новости</a>
+                  <li
+                    class="navigation__item navigation__item--white-red-arrow"
+                  >
+                    <a class="navigation__link" href="./news-page.html"
+                      >Новости</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -105,55 +147,64 @@
       </header>
       <main class="main">
         <section class="reports reports-page">
+          <h2 class="reports-section__title">ФОТО И ВИДЕО ОТЧЕТЫ</h2>
           <div class="container">
-            <div class="reports__inner reports__inner--no-pseudo" data-ref="reports">
-              <div class="reports__button-box reports__button-box--padding ">
+            <div
+              class="reports__inner reports__inner--no-pseudo"
+              data-ref="reports"
+            >
+              <div class="reports__button-box reports__button-box--padding">
                 <input
-                    class="reports__radio-button reports__radio-button--all "
-                    id="reports-all"
-                    type="radio"
-                    data-filter=".reports__content-item"
-                    name="reports-radio"
-                    checked
-                  ></input>
-                  <input
-                    class="reports__radio-button reports__radio-button--photo"
-                    id="reports-photo"
-                    type="radio"
-                    data-filter=".photo"
-                    name="reports-radio"
-                  ></input
-                  >
-                  <input
-                    class="reports__radio-button reports__radio-button--video"
-                    id="reports-video"
-                    type="radio"
-                    data-filter=".video"
-                    name="reports-radio"
-                  ></input>
+                  class="reports__radio-button reports__radio-button--all"
+                  id="reports-all"
+                  type="radio"
+                  data-filter=".reports__content-item"
+                  name="reports-radio"
+                  checked
+                />
+                <input
+                  class="reports__radio-button reports__radio-button--photo"
+                  id="reports-photo"
+                  type="radio"
+                  data-filter=".photo"
+                  name="reports-radio"
+                />
+                <input
+                  class="reports__radio-button reports__radio-button--video"
+                  id="reports-video"
+                  type="radio"
+                  data-filter=".video"
+                  name="reports-radio"
+                />
 
-                <label  class="reports__label reports__label--all" for="reports-all"
-                  >
+                <label
+                  class="reports__label reports__label--all"
+                  for="reports-all"
+                >
                   показать все</label
                 >
 
-                <label class="reports__label reports__label--photo" for="reports-photo">
+                <label
+                  class="reports__label reports__label--photo"
+                  for="reports-photo"
+                >
                   только фото
                 </label>
 
-                <label class="reports__label reports__label--video" for="reports-video"
-                  >
+                <label
+                  class="reports__label reports__label--video"
+                  for="reports-video"
+                >
                   только видео
                 </label>
               </div>
               <div class="slider">
-                <ul class="reports__content-box" >
+                <ul class="reports__content-box">
                   <li class="reports__content-item mix photo">
                     <a
                       class="reports__link-popup"
                       href="./images/report-1.jpg"
                       data-fancybox="reports"
-                      
                       >Увеличить</a
                     >
                     <img
@@ -356,7 +407,9 @@
                 </ul>
               </div>
               <div class="reports__link-box">
-                <a class="reports__link" href="">Показать все</a>
+                <a class="reports__link" href="./photo-video-reports.html"
+                  >Показать все</a
+                >
               </div>
             </div>
           </div>
@@ -416,7 +469,6 @@
                   src="https://yandex.ru/map-widget/v1/?um=constructor%3A57722fdace88a6b78a7c134a677ee84bda1f2c31d02d1a4e22d30cccb4a434e1&amp;source=constructor"
                   width="1170"
                   height="360"
-                  frameborder="0"
                 ></iframe>
               </div>
               <div class="contacts__box">
@@ -468,16 +520,32 @@
               class="call-menu__item call-menu__item--purple-hide"
               purple-hide
             >
-              <a class="call-menu__link call-menu__link--purple" href=""></a>
+              <a
+                class="call-menu__link call-menu__link--purple"
+                href="https://www.instagram.com/"
+                target="_blank"
+              ></a>
             </li>
             <li class="call-menu__item call-menu__item--grey-hide" grey-hide>
-              <a class="call-menu__link call-menu__link--grey" href=""></a>
+              <a
+                class="call-menu__link call-menu__link--grey"
+                href="tel:+770001111111"
+                target="_blank"
+              ></a>
             </li>
             <li class="call-menu__item call-menu__item--blue-hide" blue-hide>
-              <a class="call-menu__link call-menu__link--blue" href=""></a>
+              <a
+                class="call-menu__link call-menu__link--blue"
+                href="mailto:tulpar.krts@mail.ru"
+                target="_blank"
+              ></a>
             </li>
             <li class="call-menu__item call-menu__item--green-hide" green-hide>
-              <a class="call-menu__link call-menu__link--green" href=""></a>
+              <a
+                class="call-menu__link call-menu__link--green"
+                href="#"
+                target="_blank"
+              ></a>
             </li>
           </ul>
         </div>
@@ -486,7 +554,7 @@
         <div class="container">
           <div class="footer-inner">
             <div class="footer-info">
-              <a class="footer-info__link" href="">
+              <a class="footer-info__link" href="./index.html">
                 <img
                   class="footer-info__logo"
                   src="./images/footer-logo.svg"
@@ -501,19 +569,25 @@
               <h3 class="site-map__title">Карта сайта</h3>
               <ul class="site-map__list">
                 <li class="site-map__item">
-                  <a href="" class="site-map__link">Главная</a>
+                  <a href="./index.html" class="site-map__link">Главная</a>
                 </li>
                 <li class="site-map__item">
-                  <a href="" class="site-map__link">Наши услуги</a>
+                  <a href="./services-page.html" class="site-map__link"
+                    >Наши услуги</a
+                  >
                 </li>
                 <li class="site-map__item">
-                  <a href="" class="site-map__link">Отчеты</a>
+                  <a href="./photo-video-reports.html" class="site-map__link"
+                    >Отчеты</a
+                  >
                 </li>
                 <li class="site-map__item">
-                  <a href="" class="site-map__link">О нас</a>
+                  <a href="./specialists-page.html" class="site-map__link"
+                    >О нас</a
+                  >
                 </li>
                 <li class="site-map__item">
-                  <a href="" class="site-map__link">Контакты</a>
+                  <a href="./find-us.html" class="site-map__link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -532,7 +606,9 @@
 
               <ul class="footer-contacts__social-list">
                 <li class="footer-contacts__social-item">
-                  <a href="" class="footer-contacts__social-link"
+                  <a
+                    href="https://www.facebook.com/"
+                    class="footer-contacts__social-link"
                     ><img
                       class="footer-contacts__social-img"
                       src="./images/footer-social-facebook.svg"
@@ -540,7 +616,9 @@
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
-                  <a href="" class="footer-contacts__social-link"
+                  <a
+                    href="https://www.google.com/"
+                    class="footer-contacts__social-link"
                     ><img
                       class="footer-contacts__social-img"
                       src="./images/footer-social-google.svg"
@@ -548,7 +626,9 @@
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
-                  <a href="" class="footer-contacts__social-link"
+                  <a
+                    href="https://www.facebook.com/"
+                    class="footer-contacts__social-link"
                     ><img
                       class="footer-contacts__social-img"
                       src="./images/footer-social-facebook.svg"
@@ -556,7 +636,9 @@
                   /></a>
                 </li>
                 <li class="footer-contacts__social-item">
-                  <a href="" class="footer-contacts__social-link"
+                  <a
+                    href="https://www.google.com/"
+                    class="footer-contacts__social-link"
                     ><img
                       class="footer-contacts__social-img"
                       src="./images/footer-social-google.svg"

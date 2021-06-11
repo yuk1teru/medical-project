@@ -55,6 +55,11 @@
     padding: 86px 53px 86px 54px;
     background-color: rgba($white, 0.1);
   }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 600;
+  }
 }
 
 .price-list {
