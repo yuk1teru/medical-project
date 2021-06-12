@@ -35,6 +35,7 @@
 
   &__text {
     max-width: 329px;
+
     font-weight: 600;
     margin-bottom: 30px;
 
@@ -42,6 +43,9 @@
     &--right {
       max-width: 250px;
     }
+  }
+  &__link {
+    min-width: 120px;
   }
 
   &__services-list {
@@ -91,7 +95,8 @@
 }
 
 .hero-wrapper {
-  width: calc(100vw - 17px);
+  // width: calc(100vw - 17px);
+  width: calc(100vw);
 
   background: rgb(233, 82, 88);
   background: linear-gradient(
